@@ -1,10 +1,8 @@
 //! This is a collection of string metrics that are suitable for use with a
 //! BK-tree.
 
-use Metric;
-
-extern crate triple_accel;
-use self::triple_accel::{levenshtein, levenshtein::levenshtein_simd_k};
+use crate::Metric;
+use triple_accel::{levenshtein, levenshtein::levenshtein_simd_k};
 
 /// This calculates the Levenshtein distance between two strings.
 ///

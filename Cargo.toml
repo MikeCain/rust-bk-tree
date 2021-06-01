@@ -8,6 +8,7 @@ documentation = "http://eugene-bulkin.github.io/rust-docs/rust-bk-tree/bk_tree/i
 repository = "https://github.com/eugene-bulkin/rust-bk-tree"
 
 readme = "README.md"
+edition = "2018"
 license = "MIT"
 keywords = ["fuzzy", "search", "BK-tree"]
 categories = ["data-structures", "text-processing"]

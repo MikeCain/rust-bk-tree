@@ -8,8 +8,6 @@ use std::{
 };
 
 #[cfg(feature = "enable-fnv")]
-extern crate fnv;
-#[cfg(feature = "enable-fnv")]
 use fnv::FnvHashMap;
 
 #[cfg(not(feature = "enable-fnv"))]
@@ -312,7 +310,7 @@ where
 #[cfg(test)]
 mod tests {
     use std::fmt::Debug;
-    use {BKNode, BKTree};
+    use crate::{BKNode, BKTree};
 
     fn assert_eq_sorted<'t, T: 't, I>(left: I, right: &[(u32, T)])
     where
